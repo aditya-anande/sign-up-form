@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Roboto, Arial;
+    margin: 0;
+}
+
+.main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+}
+
+.image-sidebar {
+    width: 35%;
+    background-image: url("sidebar-image.jpg");
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    font-size: 50px;
+    display: flex;
+    margin-top: 150px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo img {
+    height: 100px;
+}
+
+.right {
+    width: 65%;
+}
