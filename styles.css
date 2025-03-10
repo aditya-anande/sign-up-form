@@ -24,20 +24,32 @@ body {
 
 .image-sidebar {
     width: 40%;
-    background-image: url("sidebar-image.jpg");
+    background-image: url("images/sidebar-image.jpg");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .logo {
-    font-size: 50px;
+    font-family: Norse;
+    font-size: 70px;
     display: flex;
     margin-top: 150px;
     color: #fff;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+}
+
+.logo p {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url("fonts/Norse-Bold.otf");
 }
 
 .logo img {
@@ -55,19 +67,24 @@ body {
 
 .form-box {
     background-color: #fff;
-    padding: 10px 0px 20px 25px;
+    padding: 10px 0px 20px 30px;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.form-box h3{
+    font-weight: 500;
 }
 
 .form-heading {
-    padding-left: 25px;
+    padding-left: 30px;
     width: 80%;
 }
 .form-heading h3 {
     font-size: 18px;
+    
 }
 .form-bottom {
-    padding-left: 25px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -75,7 +92,9 @@ body {
 }
 label {
     display: block;
-    font-size: 12px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 form {
     width: 80%;
@@ -117,4 +136,15 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #3b5822;
+    opacity: 0.9;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
 }
